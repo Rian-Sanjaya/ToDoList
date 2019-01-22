@@ -15,6 +15,10 @@ h1 {
 	font-weight: normal;
 }
 
+.hide {
+	display: none;
+}
+
 .fa-plus {
 	float: right;
 }
@@ -43,13 +47,13 @@ input:focus {
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+ul.list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-li {
+ul.list li {
 	background: #fff;
 	height: 40px;
 	line-height: 40px; /*make the text vertical center*/
@@ -58,11 +62,11 @@ li {
 	width: 100%; /*this to make word wrap for long list item*/
 }
 
-li:nth-child(2n) {
+ul.list li:nth-child(2n) {
 	background: #f7f7f7;
 }
 
-span {
+ul.list span {
 	background: #e74c3c;
 	color: #fff;
 	margin-right: 20px;
@@ -74,7 +78,7 @@ span {
 	transition: width .3s linear, opacity .3s linear;
 }
 
-li:hover span {
+ul.list li:hover span {
 	width: 40px;
 	opacity: 1.0;
 }
@@ -84,3 +88,20 @@ li:hover span {
 	text-decoration: line-through;
 }
 
+.list-footer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 20px;
+}
+
+.list-footer li {
+	height: 40px;
+	line-height: 40px; /*make the text vertical center*/
+	color: #666;
+	display: inline-block; /*this to make word wrap for long list item*/
+	margin-right: 20px;
+}
+
+.list-footer li a {
+	text-decoration: none;
+}
