@@ -105,3 +105,9 @@ ul.list li:hover span {
 .list-footer li a {
 	text-decoration: none;
 }
+
+.selected {
+	border: 1px solid;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
